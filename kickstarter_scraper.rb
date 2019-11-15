@@ -10,11 +10,11 @@ def create_project_hash
   project = {}
   
     # Iterate through the projects
-  kickstarter.cee("li.project.grid_4").each do |project|
-    project[project] = {}
+  kickstarter.css("li.project.grid_4").each do |project|
+    projects[project] = {}
     
-    
-  binding.pry
+  # return the projects hash
+  projects
 end
 
 # projects: kickstarter.css("li.project.grid_4")
