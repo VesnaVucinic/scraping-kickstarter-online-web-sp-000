@@ -9,7 +9,11 @@ def create_project_hash
   
   project = {}
   
-  
+    # Iterate through the projects
+  kickstarter.cee("li.project.grid_4").each do |project|
+    project[project] = {}
+    
+    
   binding.pry
 end
 
